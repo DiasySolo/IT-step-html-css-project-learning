@@ -1,0 +1,20 @@
+@mixin text($color, $size) {
+    color: $color;
+    font-family: 'DM Sans';
+    font-size: $size;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%; /* 95.04px */
+}
+
+@mixin heading($color, $size) {
+    color: $color;
+    font-family: "Inter";
+    font-size: $size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 38.4px */
+}
+
+
+

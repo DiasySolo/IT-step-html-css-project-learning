@@ -1,0 +1,85 @@
+@use "../../base/mixin" as *;
+@use "../../base/variabless" as *;
+
+.get_demo {
+        display: flex;
+        padding: var(--inset-md, 16px) var(--inset-lg, 20px);
+        justify-content: center;
+        align-items: center;
+        border-radius: var(--md, 12px);
+        border: 1px solid $main_border_color;
+        background: $main_bg_color;
+        backdrop-filter: blur(calc(var(--Blue-2, 12px) / 2));
+
+        @include text($button_nav_main_color, 14px);
+        cursor: pointer;
+    }
+
+    .free_trial {
+        display: flex;
+        padding: var(--inset-md, 16px) var(--inset-lg, 20px);
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 12px;
+        background: $button_nav_main_color;
+        cursor: pointer;
+        @include text (#fff,14px);
+        border: none;
+        box-shadow: none;
+        outline: none;
+
+    }
+
+
+     .hero_buttons {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: var(--stack-4xl, 48px);
+        cursor: pointer;
+    }
+
+    .free_trial_hero,
+    .learn_more {
+        display: inline-flex;
+        min-height: 48px;
+        padding: 16px 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .free_trial_hero {
+        border: 1px solid $button_nav_main_color;
+        background-color: $button_nav_main_color;
+          @include text (#fff,14px);
+    }
+
+    .learn_more {
+        border: 1px solid $main_border_color;
+        background-color: transparent;
+        color:$text_main_color;
+    }
+
+
+  .trial_banner_button {
+        display: inline-flex;
+        align-self: flex-start;
+        justify-content: center;
+        align-items: center;
+        background-color: $button_nav_main_color;
+        color: #fff;
+        padding: 14px 40px;
+        margin: 20px 0 0;
+
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+        font: inherit;
+    }

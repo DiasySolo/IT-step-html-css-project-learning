@@ -1,0 +1,192 @@
+@use '../../base/variabless' as *;
+@use '../../base/mixin' as *;
+@use '../../base/media' as *;
+
+header {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 40px;
+    margin-inline: auto;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: $main_bg_color;
+
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.Left_menu {
+    display: flex;
+    align-items: center;
+    gap: var(--inline-4xl, 52px);
+    align-self: stretch;
+    padding-bottom: 0;
+
+    .Logo {
+        display: flex;
+        width: 113.548px;
+        height: 32px;
+
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .Navigation_list {
+        display: flex;
+        align-items: flex-start;
+        gap: var(--inline-3xl, 40px);
+        color: $text_main_color;
+
+        .Navigation_item {
+            a {
+                @include text($text_main_color, 16px);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: relative;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        text-decoration: none;
+    }
+}
+
+.arrow {
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid $text_main_color;
+    border-bottom: 2px solid $text_main_color;
+    transform: rotate(45deg);
+    margin-top: -4px;
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 10px;
+    z-index: 10;
+
+    a {
+        display: block;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.dropdown_menu a:hover {
+    background-color: azure;
+}
+
+.dropdown:hover .dropdown_menu {
+    display: block;
+}
+
+.Rigt_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--inline-sm, 12px);
+}
+
+.menu_toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: $text_main_color;
+        border-radius: 2px;
+    }
+}
+
+@include tablet {
+    header {
+        padding: 20px;
+    }
+
+    .Left_menu {
+        gap: 20px;
+
+    }
+
+    .Navigation_list {
+        display: none !important;
+    }
+
+    .Rigt_menu {
+        margin-left: auto;
+    }
+
+    .get_demo {
+        display: none;
+    }
+
+    .menu_toggle {
+        display: flex;
+        margin-left: 16px;
+        flex-shrink: 0;
+    }
+}
+
+@include mobile {
+    header {
+        padding: 16px 20px;
+    }
+
+    .Left_menu {
+        gap: 0;
+    }
+
+    .Navigation_list {
+        display: none !important;
+    }
+
+    .Rigt_menu {
+        display: flex;
+    }
+
+    .free_trial,.get_demo {
+        display: none !important;
+    }
+
+    .menu_toggle {
+        display: flex ;
+        margin-left: auto;
+        flex-shrink: 0;
+    }
+
+    .Logo {
+        flex-shrink: 0;
+    }
+}
+

@@ -1,0 +1,126 @@
+@use '../../base/variabless' as *;
+@use '../../base/mixin' as *;
+@use '../../base/media' as *;
+
+.hero {
+    display: flex;
+    width: 100%;
+    padding: 212px 40px 80px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    .extra_hero {
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .hero_content {
+        display: flex;
+        flex: 1 1 0;
+        min-width: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--stack-2xl, 32px);
+    }
+
+    .hero_title {
+        @include text($title_main_color, 88px);
+        align-self: stretch;
+        max-width: 750px;
+    }
+
+    .hero_description {
+        @include heading($text_main_color, 24px);
+        opacity: 0.8;
+        max-height: calc(1.6em * 3);
+        overflow: hidden;
+    }
+
+    .hero_galery {
+        display: flex;
+        width: 376px;
+        min-width: 376px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 8px;
+        flex-shrink: 0;
+    }
+
+    .gallery_item {
+        display: block;
+        flex: 0 0 120px;
+        width: 120px;
+        height: 120px;
+        margin: 0;
+        border-radius: 24px;
+        object-fit: cover;
+    }
+
+    .gallery_item:first-child {
+        margin-left: 128px;
+    }
+
+    .gallery_decoration {
+        display: block;
+        flex: 0 0 120px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .gallery_decoration svg {
+        display: block;
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@include tablet {
+    .extra_hero {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 48px !important;
+    }
+
+    .hero_galery {
+        margin-left: auto;
+    }
+    .hero_title {
+        font-size: 88px;
+        line-height: 1.08;
+    }
+
+    .hero_description {
+        max-height: calc(1.6em * 3);
+        max-width: 650px;
+        overflow: hidden;
+    }
+}
+
+@include mobile {
+    .extra_hero {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 48px !important;
+        margin-right: auto;
+    }
+
+
+
+    .hero_buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: flex-start;
+    }
+
+    .free_trial_hero,
+    .learn_more {
+        min-width: 300px;
+    }
+}
+

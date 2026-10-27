@@ -1,0 +1,192 @@
+@use '../../base/mixin' as *;
+@use '../../base/variabless' as *;
+
+.popup_toggle {
+    display: none;
+}
+
+.popup_overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+}
+
+.popup_toggle:checked ~ .popup_overlay {
+    display: flex;
+}
+
+.popup_content {
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    padding: 48px 40px;
+    box-sizing: border-box;
+    background: url('../../asetss/images/Business2.png') center / cover no-repeat;
+    color: #222;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+    h2 {
+        margin: 0 0 12px;
+        font-size: 30px;
+        line-height: 1.2;
+        @include text($button_nav_main_color, 24px);
+    }
+
+    p {
+        margin: 0 0 28px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+    }
+
+    input {
+        width: 100%;
+        min-height: 52px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        background: #fff;
+        color: #222;
+        font: inherit;
+        outline: none;
+        transition:
+            border-color 0.2s,
+            box-shadow 0.2s;
+
+        &:focus {
+            border-color: #5b5bd6;
+            box-shadow: 0 0 0 3px rgba(91, 91, 214, 0.12);
+        }
+    }
+
+    button {
+        min-height: 52px;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 10px;
+        background: $button_nav_main_color;
+        font: inherit;
+        cursor: pointer;
+        transition: background 0.2s;
+        @include text($title_main_color, 16px);
+
+        &:hover {
+            background: #4646b8;
+        }
+    }
+}
+
+.popup_close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    font-size: 30px;
+    line-height: 1;
+    color: #666;
+    cursor: pointer;
+
+    &:hover {
+        color: #111;
+    }
+}
+
+.dereck_toggle {
+    display: none;
+}
+
+.dereck_overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dereck_popup {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+
+    padding: 40px;
+    background: #266c0fee;
+
+    color: #222;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.dereck_close {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    color: #080808;
+}
+
+.dereck_close:hover {
+    color: #000;
+}
+
+.dereck_popup h2 {
+    margin: 0 0 16px;
+    font-size: 25px;
+    font-weight: 700;
+
+}
+
+.dereck_popup p {
+    margin: 0 0 24px;
+    line-height: 1.6;
+    color: #030303;
+    font-weight: 700;
+}
+
+.dereck_button {
+    display: inline-block;
+    padding: 12px 24px;
+
+    background: #09090a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+
+    transition: background 0.2s ease;
+}
+
+.dereck_button:hover {
+    background: #013d44;
+}
+
+.dereck_toggle:not(:checked) + .dereck_overlay {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .dereck_popup {
+        padding: 32px 24px;
+    }
+
+    .dereck_popup h2 {
+        font-size: 24px;
+    }
+}

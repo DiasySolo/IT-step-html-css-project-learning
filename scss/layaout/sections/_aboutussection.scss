@@ -1,0 +1,137 @@
+@use '../../base/variabless' as *;
+@use '../../base/media' as *;
+@use '../../base/mixin' as *;
+
+.about_us {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    padding: 128px 40px 112px;
+    gap: 60px;
+
+    margin-inline: auto;
+}
+
+.about_us_item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+    p {
+        @include heading($text_main_color, 24px);
+        line-height: 1.6;
+        width: 100%;
+    }
+}
+
+.about_us_metric {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.about_us_link {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+    }
+
+    p {
+        margin: 0;
+        color: $button_nav_main_color;
+        text-align: center;
+        font-family: 'DM Sans';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 122%;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+
+    img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
+    }
+}
+
+.about_us_item1 {
+    display: flex;
+    padding-right: 40px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    align-self: stretch;
+
+    h1 {
+        color: $button_nav_main_color;
+        font-family: 'Inter';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 132%;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        @include text($title_main_color, 48px);
+    }
+}
+
+.about_us_metric_item1 {
+    display: flex;
+    width: 119px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    .p {
+        @include heading($text_main_color, 20px);
+    }
+}
+
+.about_us_metric_item2 {
+    display: flex;
+    width: 170px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+
+    .p {
+        @include heading($text_main_color, 20px);
+    }
+}
+
+.about_us_metric_item3 {
+    display: flex;
+    width: 212px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    .p {
+        @include heading($text_main_color, 20px);
+    }
+}
+
+.about_us_metric_item_number {
+    @include text(#a2a89e, 39px);
+    align-self: stretch;
+}
+
+

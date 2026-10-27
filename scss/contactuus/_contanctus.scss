@@ -1,0 +1,51 @@
+@use '../base/variabless' as *;
+
+
+.contact_us_us {
+    display: flex;
+    width: 100%;
+    padding: 212px 40px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 650px;
+    height: 450px;
+    padding: 15px;
+    gap: 15px;
+    background-color: #292a29a3;
+    border-radius: 16px;
+}
+
+input {
+    background-color: rgba(235, 239, 235, 0.71);
+}
+
+.contact_message,
+h1 {
+    color: white;
+}
+
+.contact1 {
+    width: 600px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 16px;
+
+    iframe {
+        display: block;
+        width: 100%;
+        height: 450px;
+        border: 0;
+    }
+}
+
+textarea {
+    background-color: rgba(235, 239, 235, 0.71);
+    height: 200px;
+}

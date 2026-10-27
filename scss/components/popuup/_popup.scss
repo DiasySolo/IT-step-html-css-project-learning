@@ -35,7 +35,7 @@
         margin: 0 0 12px;
         font-size: 30px;
         line-height: 1.2;
-        @include text($button_nav_main_color, 24px);
+        @include text($title_main_color, 24px);
     }
 
     p {
@@ -94,11 +94,11 @@
     right: 20px;
     font-size: 30px;
     line-height: 1;
-    color: #666;
+    color: #000000;
     cursor: pointer;
 
     &:hover {
-        color: #111;
+        color: #d60f0f;
     }
 }
 
@@ -140,7 +140,7 @@
     font-size: 30px;
     line-height: 1;
     cursor: pointer;
-    color: #080808;
+    color: #070707;
 }
 
 .dereck_close:hover {

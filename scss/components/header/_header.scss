@@ -62,6 +62,7 @@ header {
         align-items: center;
         gap: 12px;
         text-decoration: none;
+
     }
 }
 
@@ -106,6 +107,10 @@ header {
     justify-content: flex-end;
     align-items: center;
     gap: var(--inline-sm, 12px);
+
+    a {
+        color: white;
+    }
 }
 
 .menu_toggle {

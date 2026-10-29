@@ -1,0 +1,158 @@
+@use '../base/variabless' as *;
+@use '../base/mixin' as *;
+
+
+
+.plan_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 128px 40px 112px;
+    gap: 60px;
+    margin-inline: auto;
+}
+
+.plan_se_main {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            @include text($title_main_color, 39px);
+            text-wrap: wrap;
+        }
+        p {
+            @include heading($text_main_color, 18px);
+            text-wrap: wrap;
+        }
+    }
+}
+
+.plan_monthly_y {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        align-self: center;
+
+        // img:hover{
+        //   content: url(../../asetss/icon/on-button.png);
+        // }
+    }
+    p,
+    .Yearly {
+        @include heading($text_main_color, 16px);
+    }
+    .Yearly {
+        color: rgba(128, 128, 128, 0.393);
+    }
+
+    .discount {
+        border: 1px solid rgba(128, 128, 128, 0.059);
+        border-radius: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 16px;
+        color: rgb(9, 211, 9);
+        background-color: rgb(1, 15, 1);
+    }
+}
+
+.plan_choose {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.plan_choose_item {
+    display: flex;
+    margin-top: 15px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    justify-content: center;
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    border-radius: 25px;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    height: 500px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3 ease,
+        box-shadow 0.3s ease;
+
+    &:hover{
+      transform: translateY(-20px) scale(1.02);
+      border-color: green;
+      box-shadow: 0 10px 30px rgb(119, 118, 118);
+      z-index: 40;
+    }
+
+    h1 {
+        @include text($title_main_color, 20px);
+    }
+
+    .price {
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+    }
+    .per_month {
+        @include text(#838b7f87, 10px);
+    }
+}
+
+.description_item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+    color: #f9fff9de;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .grey_color {
+        color: rgba(128, 128, 128, 0.247);
+    }
+
+    img {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+}
+
+.Get_plan {
+    align-self: center;
+    border-radius: 1px solid rgba(128, 128, 128, 0);
+    width: 250px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: $button_nav_main_color;
+    color: rgba(255, 255, 255, 0.737);
+    font-size: 16px;
+    font-weight: 700;
+}

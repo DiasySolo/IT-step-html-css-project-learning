@@ -159,6 +159,9 @@ header {
           align-items: center;
   gap: var(--inline-sm, 12px);
 }
+.Rigt_menu a {
+  color: white;
+}
 
 .menu_toggle {
   display: none;
@@ -1263,6 +1266,9 @@ main {
   max-height: 4.8em;
   overflow: hidden;
 }
+.hero .free_trial_hero a {
+  color: #E0E3DD;
+}
 .hero .hero_galery {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2154,17 +2160,17 @@ footer {
   height: 450px;
   padding: 15px;
   gap: 15px;
-  background-color: rgba(41, 42, 41, 0.6392156863);
+  background-color: rgba(1, 1, 1, 0.6392156863);
   border-radius: 16px;
 }
 
 input {
-  background-color: rgba(235, 239, 235, 0.71);
+  background-color: rgba(3, 3, 3, 0.71);
 }
 
 .contact_message,
 h1 {
-  color: white;
+  color: rgb(246, 243, 243);
 }
 
 .contact1 {
@@ -2181,6 +2187,232 @@ h1 {
 }
 
 textarea {
-  background-color: rgba(235, 239, 235, 0.71);
+  background-color: rgba(9, 9, 9, 0.71);
   height: 200px;
+  color: white;
+}
+
+.submit {
+  color: white;
+  height: 50px;
+  font-size: 18px;
+}
+
+.plan_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 128px 40px 112px;
+  gap: 60px;
+  margin-inline: auto;
+}
+
+.plan_se_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.plan_se_main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.plan_se_main .text h1 {
+  color: #E0E3DD;
+  font-family: "DM Sans";
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%; /* 95.04px */
+  text-wrap: wrap;
+}
+.plan_se_main .text p {
+  color: #838B7F;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+  text-wrap: wrap;
+}
+
+.plan_monthly_y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.plan_monthly_y img {
+  width: 30px;
+  height: 30px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.plan_monthly_y p,
+.plan_monthly_y .Yearly {
+  color: #838B7F;
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 38.4px */
+}
+.plan_monthly_y .Yearly {
+  color: rgba(128, 128, 128, 0.393);
+}
+.plan_monthly_y .discount {
+  border: 1px solid rgba(128, 128, 128, 0.059);
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0;
+  padding-top: 0;
+  font-size: 16px;
+  color: rgb(9, 211, 9);
+  background-color: rgb(1, 15, 1);
+}
+
+.plan_choose {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 20px;
+}
+
+.plan_choose_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid rgba(128, 128, 128, 0.253);
+  border-radius: 25px;
+  padding: 20px;
+  z-index: 1;
+  position: relative;
+  height: 500px;
+  -webkit-transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.plan_choose_item:hover {
+  -webkit-transform: translateY(-20px) scale(1.02);
+          transform: translateY(-20px) scale(1.02);
+  border-color: green;
+  -webkit-box-shadow: 0 10px 30px rgb(119, 118, 118);
+          box-shadow: 0 10px 30px rgb(119, 118, 118);
+  z-index: 40;
+}
+.plan_choose_item h1 {
+  color: #E0E3DD;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%; /* 95.04px */
+}
+.plan_choose_item .price {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+.plan_choose_item .per_month {
+  color: rgba(131, 139, 127, 0.5294117647);
+  font-family: "DM Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 108%; /* 95.04px */
+}
+
+.description_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+  color: rgba(249, 255, 249, 0.8705882353);
+  font-size: 15px;
+  text-wrap: wrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.description_item .grey_color {
+  color: rgba(128, 128, 128, 0.247);
+}
+.description_item img {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.Get_plan {
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 1px solid rgba(128, 128, 128, 0);
+  width: 250px;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #55A938;
+  color: rgba(255, 255, 255, 0.737);
+  font-size: 16px;
+  font-weight: 700;
 }

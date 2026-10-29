@@ -41,6 +41,12 @@
         overflow: hidden;
     }
 
+    .free_trial_hero {
+        a{
+            color: $title_main_color;
+        }
+    }
+
     .hero_galery {
         display: flex;
         width: 376px;

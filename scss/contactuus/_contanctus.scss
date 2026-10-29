@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    
+
 }
 
 .form-contact__wrapper {
@@ -19,17 +19,17 @@
     height: 450px;
     padding: 15px;
     gap: 15px;
-    background-color: #292a29a3;
+    background-color: #010101a3;
     border-radius: 16px;
 }
 
 input {
-    background-color: rgba(235, 239, 235, 0.71);
+    background-color: rgba(3, 3, 3, 0.71);
 }
 
 .contact_message,
 h1 {
-    color: white;
+    color: rgb(246, 243, 243);
 }
 
 .contact1 {
@@ -47,6 +47,13 @@ h1 {
 }
 
 textarea {
-    background-color: rgba(235, 239, 235, 0.71);
+    background-color: rgba(9, 9, 9, 0.71);
     height: 200px;
+    color: white;
+}
+
+.submit{
+    color: white;
+    height: 50px;
+    font-size: 18px;
 }

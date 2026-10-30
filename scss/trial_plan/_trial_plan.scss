@@ -97,7 +97,7 @@
 
     transition:
         transform 0.3s ease,
-        border-color 0.3 ease,
+        border-color 0.3s ease,
         box-shadow 0.3s ease;
 
     &:hover {
@@ -161,7 +161,6 @@
     align-items: center;
     padding: 128px 40px 112px;
     gap: 60px;
-
 }
 
 .compare_list {
@@ -184,8 +183,7 @@
     }
 }
 
-
-  .compare_plans {
+.compare_plans {
     display: grid;
     grid-template-columns: 1.5fr repeat(4, 1fr);
     align-items: start;
@@ -200,7 +198,22 @@
     border-radius: 15px;
     padding: 15px;
 
-    .comparekl{
+    z-index: 1;
+    position: relative;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-20px) scale(1.02);
+        border-color: green;
+        box-shadow: 0 10px 30px rgb(119, 118, 118);
+        z-index: 40;
+    }
+
+    .comparekl {
         font-size: 24px;
         align-self: start;
     }
@@ -209,7 +222,6 @@
         text-align: center;
         font-size: 15px;
         color: grey;
-
     }
 
     ul {
@@ -240,16 +252,15 @@
     }
 
     h2 {
-        color:$title_main_color;
+        color: $title_main_color;
         font-size: 24px;
     }
 
     .vomp {
         align-items: flex-start;
-        .next{
+        .next {
             margin-top: 5px;
             font-size: 24px;
-
         }
         li {
             justify-content: flex-start;
@@ -260,11 +271,10 @@
 }
 
 .get_plan2 {
-        align-self: center;
-        width: 120px;
-        height: 40px;
-        margin-top: 20px;
-        border-radius: 15px;
-        background-color: $button_nav_main_color;
-
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: $button_nav_main_color;
 }

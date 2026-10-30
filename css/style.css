@@ -2340,10 +2340,10 @@ textarea {
   z-index: 1;
   position: relative;
   height: 500px;
-  -webkit-transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 .plan_choose_item:hover {
   -webkit-transform: translateY(-20px) scale(1.02);
@@ -2486,6 +2486,20 @@ textarea {
   border: 1px solid rgba(128, 128, 128, 0.297);
   border-radius: 15px;
   padding: 15px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.compare_plans_item:hover {
+  -webkit-transform: translateY(-20px) scale(1.02);
+          transform: translateY(-20px) scale(1.02);
+  border-color: green;
+  -webkit-box-shadow: 0 10px 30px rgb(119, 118, 118);
+          box-shadow: 0 10px 30px rgb(119, 118, 118);
+  z-index: 40;
 }
 .compare_plans_item .comparekl {
   font-size: 24px;

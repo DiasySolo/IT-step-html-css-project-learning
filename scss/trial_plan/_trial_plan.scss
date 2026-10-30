@@ -161,7 +161,6 @@
     align-items: center;
     padding: 128px 40px 112px;
     gap: 60px;
-
 }
 
 .compare_list {
@@ -184,8 +183,7 @@
     }
 }
 
-
-  .compare_plans {
+.compare_plans {
     display: grid;
     grid-template-columns: 1.5fr repeat(4, 1fr);
     align-items: start;
@@ -199,10 +197,8 @@
     border: 1px solid rgba(128, 128, 128, 0.297);
     border-radius: 15px;
     padding: 15px;
-
-     z-index: 1;
+    z-index: 1;
     position: relative;
-
 
     transition:
         transform 0.3s ease,
@@ -216,7 +212,7 @@
         z-index: 40;
     }
 
-    .comparekl{
+    .comparekl {
         font-size: 24px;
         align-self: start;
     }
@@ -225,7 +221,6 @@
         text-align: center;
         font-size: 15px;
         color: grey;
-
     }
 
     ul {
@@ -256,16 +251,15 @@
     }
 
     h2 {
-        color:$title_main_color;
+        color: $title_main_color;
         font-size: 24px;
     }
 
     .vomp {
         align-items: flex-start;
-        .next{
+        .next {
             margin-top: 75px;
             font-size: 24px;
-
         }
         li {
             justify-content: flex-start;
@@ -276,11 +270,10 @@
 }
 
 .get_plan2 {
-        align-self: center;
-        width: 120px;
-        height: 40px;
-        margin-top: 20px;
-        border-radius: 15px;
-        background-color: $button_nav_main_color;
-
+    align-self: center;
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: $button_nav_main_color;
 }

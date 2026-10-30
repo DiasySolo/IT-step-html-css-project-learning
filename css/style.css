@@ -2488,10 +2488,10 @@ textarea {
   padding: 15px;
   z-index: 1;
   position: relative;
-  -webkit-transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
-  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
 .compare_plans_item:hover {
   -webkit-transform: translateY(-20px) scale(1.02);

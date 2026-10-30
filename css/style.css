@@ -2209,7 +2209,7 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 128px 40px 112px;
+  padding: 128px 40px 20px;
   gap: 60px;
   margin-inline: auto;
 }
@@ -2415,4 +2415,168 @@ textarea {
   color: rgba(255, 255, 255, 0.737);
   font-size: 16px;
   font-weight: 700;
+}
+
+.plan_compare {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 128px 40px 112px;
+  gap: 60px;
+}
+
+.compare_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1200px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.title p {
+  color: grey;
+  margin-bottom: 50px;
+}
+
+.compare_plans {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 20px;
+}
+
+.compare_plans_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(128, 128, 128, 0.297);
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 1;
+  position: relative;
+  -webkit-transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: border-color 0.3 ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, border-color 0.3 ease, box-shadow 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
+}
+.compare_plans_item:hover {
+  -webkit-transform: translateY(-20px) scale(1.02);
+          transform: translateY(-20px) scale(1.02);
+  border-color: green;
+  -webkit-box-shadow: 0 10px 30px rgb(119, 118, 118);
+          box-shadow: 0 10px 30px rgb(119, 118, 118);
+  z-index: 40;
+}
+.compare_plans_item .comparekl {
+  font-size: 24px;
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+.compare_plans_item h1 {
+  text-align: center;
+  font-size: 15px;
+  color: grey;
+}
+.compare_plans_item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 15px;
+  margin: 0;
+  list-style: none;
+}
+.compare_plans_item li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  min-height: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+  color: rgba(58, 58, 58, 0.829);
+}
+.compare_plans_item p {
+  color: rgb(121, 119, 119);
+}
+.compare_plans_item h2 {
+  color: #E0E3DD;
+  font-size: 24px;
+}
+.compare_plans_item .vomp {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.compare_plans_item .vomp .next {
+  margin-top: 75px;
+  font-size: 24px;
+}
+.compare_plans_item .vomp li {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 0;
+}
+
+.get_plan2 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: #55A938;
 }

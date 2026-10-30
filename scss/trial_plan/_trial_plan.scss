@@ -1,13 +1,11 @@
 @use '../base/variabless' as *;
 @use '../base/mixin' as *;
 
-
-
 .plan_section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 128px 40px 112px;
+    padding: 128px 40px 20px;
     gap: 60px;
     margin-inline: auto;
 }
@@ -102,11 +100,11 @@
         border-color 0.3 ease,
         box-shadow 0.3s ease;
 
-    &:hover{
-      transform: translateY(-20px) scale(1.02);
-      border-color: green;
-      box-shadow: 0 10px 30px rgb(119, 118, 118);
-      z-index: 40;
+    &:hover {
+        transform: translateY(-20px) scale(1.02);
+        border-color: green;
+        box-shadow: 0 10px 30px rgb(119, 118, 118);
+        z-index: 40;
     }
 
     h1 {
@@ -155,4 +153,134 @@
     color: rgba(255, 255, 255, 0.737);
     font-size: 16px;
     font-weight: 700;
+}
+
+.plan_compare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 40px 112px;
+    gap: 60px;
+
+}
+
+.compare_list {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+        color: grey;
+        margin-bottom: 50px;
+    }
+}
+
+
+  .compare_plans {
+    display: grid;
+    grid-template-columns: 1.5fr repeat(4, 1fr);
+    align-items: start;
+    gap: 20px;
+}
+
+.compare_plans_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.297);
+    border-radius: 15px;
+    padding: 15px;
+
+     z-index: 1;
+    position: relative;
+
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3 ease,
+        box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-20px) scale(1.02);
+        border-color: green;
+        box-shadow: 0 10px 30px rgb(119, 118, 118);
+        z-index: 40;
+    }
+
+    .comparekl{
+        font-size: 24px;
+        align-self: start;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 15px;
+        color: grey;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 50px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.13);
+        color: rgba(58, 58, 58, 0.829);
+    }
+
+    p {
+        color: rgb(121, 119, 119);
+    }
+
+    h2 {
+        color:$title_main_color;
+        font-size: 24px;
+    }
+
+    .vomp {
+        align-items: flex-start;
+        .next{
+            margin-top: 75px;
+            font-size: 24px;
+
+        }
+        li {
+            justify-content: flex-start;
+
+            padding-left: 0;
+        }
+    }
+}
+
+.get_plan2 {
+        align-self: center;
+        width: 120px;
+        height: 40px;
+        margin-top: 20px;
+        border-radius: 15px;
+        background-color: $button_nav_main_color;
+
 }
